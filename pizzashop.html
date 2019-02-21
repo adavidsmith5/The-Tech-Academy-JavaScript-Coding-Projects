@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .header {
+            text-align: center;
+        }
+        .btn {
+            text-decoration: none;
+            color: black;
+        }
+        .btn:hover {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="shop-name">Tech Academy Pizza</h1>
+        </div>
+
+        <div id="accordion">
+            <div class="card border-primary">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Select a Size - Medium is Default Choice
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body bg-light">
+                        <form class="was-validated">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio1" name="sizeRadio" class="custom-control-input" value="Personal">
+                                <label class="custom-control-label" for="customRadio1">Personal ($6.00)</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio2" name="sizeRadio" class="custom-control-input" value="Medium" checked>
+                                <label class="custom-control-label" for="customRadio2">Medium ($10.00)</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio3" name="sizeRadio" class="custom-control-input" value="Large">
+                                <label class="custom-control-label" for="customRadio3">Large ($14.00)</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio4" name="sizeRadio" class="custom-control-input" value="XLarge">
+                                <label class="custom-control-label" for="customRadio4">XLarge ($16.00)</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-primary">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Select a Sauce - Marinara is Default
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio5" name="sauceRadio" class="custom-control-input" value="Marinara" checked>
+                            <label class="custom-control-label" for="customRadio5">Marinara</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio6" name="sauceRadio" class="custom-control-input" value="White">
+                            <label class="custom-control-label" for="customRadio6">White</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio7" name="sauceRadio" class="custom-control-input" value="Barbecue">
+                            <label class="custom-control-label" for="customRadio7">Barbecue</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio8" name="sauceRadio" class="custom-control-input" value="No Sauce">
+                            <label class="custom-control-label" for="customRadio8">No Sauce</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-primary">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Select a Crust - Plain Crust is Default
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio9" name="crustRadio" class="custom-control-input" value="Plain Crust" checked>
+                            <label class="custom-control-label" for="customRadio9">Plain Crust</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio10" name="crustRadio" class="custom-control-input" value="Garlic Butter Crust">
+                            <label class="custom-control-label" for="customRadio10">Garlic Butter Crust</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio11" name="crustRadio" class="custom-control-input" value="Cheese Stuffed Crust">
+                            <label class="custom-control-label" for="customRadio11">Cheese Stuffed Crust (+$3.00)</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio12" name="crustRadio" class="custom-control-input" value="Spicy Crust">
+                            <label class="custom-control-label" for="customRadio12">Spicy Crust</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio13" name="crustRadio" class="custom-control-input" value="House Special Crust">
+                            <label class="custom-control-label" for="customRadio13">House Special Crust</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-primary">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Select Cheese - Regular is Default
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio14" name="cheeseRadio" class="custom-control-input" value="Regular" checked>
+                            <label class="custom-control-label" for="customRadio14">Regular</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio15" name="cheeseRadio" class="custom-control-input" value="No Cheese">
+                            <label class="custom-control-label" for="customRadio15">No Cheese</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio16" name="cheeseRadio" class="custom-control-input" value="Extra Cheese">
+                            <label class="custom-control-label" for="customRadio16">Extra Cheese (+$3.00)</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-primary">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Select Meat Options (First is complementary, and each subsequent choice is $1.00 additional dollar)
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="form-check" id="meatsCheckboxes">
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" value="Pepperoni">
+                                <label class="custom-control-label" for="customCheck1">Pepperoni</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2" value="Sausage">
+                                <label class="custom-control-label" for="customCheck2">Sausage</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck3" value="Canadian Bacon">
+                                <label class="custom-control-label" for="customCheck3">Canadian Bacon</label>
+                            </div>
+                            <br />
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4" value="Ground Beef">
+                                <label class="custom-control-label" for="customCheck4">Ground Beef</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck5" value="Anchovy">
+                                <label class="custom-control-label" for="customCheck5">Anchovy</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck6" value="Chicken">
+                                <label class="custom-control-label" for="customCheck6">Chicken</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-primary">
+                <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Select Veggie Options (First is complementary, and each subsequent choice is $1.00 additional dollar)
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="form-check" id="veggiesCheckboxes">
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck7" value="Tomatoes">
+                                <label class="custom-control-label" for="customCheck7">Tomatoes</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck8" value="Onions">
+                                <label class="custom-control-label" for="customCheck8">Onions</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck9" value="Olives">
+                                <label class="custom-control-label" for="customCheck9">Olives</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck10" value="Green Peppers">
+                                <label class="custom-control-label" for="customCheck10">Green Peppers</label>
+                            </div>
+                            <br />
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck11" value="Mushrooms">
+                                <label class="custom-control-label" for="customCheck11">Mushrooms</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck12" value="Pineapple">
+                                <label class="custom-control-label" for="customCheck12">Pineapple</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck13" value="Spinach">
+                                <label class="custom-control-label" for="customCheck13">Spinach</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck14" value="Jalapeno">
+                                <label class="custom-control-label" for="customCheck14">Jalape&ntilde;o</label>
+                                <div class="invalid-feedback">More example invalid feedback text</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit" onclick="showReceipt()" data-toggle="modal" data-target="#receipt">Submit Order</button>
+
+        <div class="modal fade" id="receipt" tabindex="-1" role="dialog" aria-labelledby="registerLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="registerLabel">Your Order</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table" id="receiptTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Ordered:</th>
+                                    <th scope="col">Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <br /><br /><br />
+                    <h1 id="totalCost"></h1>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="orderComplete()">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+
+        
+            function showReceipt() {
+                var size = $('input[name=sizeRadio]:checked').val();
+                var sauce = $('input[name=sauceRadio]:checked').val();
+                var crust = $('input[name=crustRadio]:checked').val();
+                var cheese = $('input[name=cheeseRadio]:checked').val();
+                var meats =  $("#meatsCheckboxes input:checkbox:checked").map(function () {
+                        return $(this).val();
+                    }).get();
+                var veggies = $("#veggiesCheckboxes input:checkbox:checked").map(function () {
+                        return $(this).val();
+                    }).get();
+                var sizeCost = sizeCostCalculator(size);
+                var crustCost = crustCostCalculator(crust);
+                var cheeseCost = cheeseCostCalculator(cheese);
+                var meatsCost = meatsCostCalculator(meats);
+                var veggiesCost = veggiesCostCalculator(veggies);
+                var totalCost = sizeCost + crustCost + cheeseCost + meatsCost + veggiesCost;
+                $('#receiptTable').html('<tr><td>' + size + '</td><td>$' + sizeCost + '</td></tr>');
+                $('#receiptTable tr:last').after('<tr><td>' + sauce + '</td><td>$0</td></tr>');
+                $('#receiptTable tr:last').after('<tr><td>' + crust + '</td><td>$' + crustCost + '</td></tr>');
+                $('#receiptTable tr:last').after('<tr><td>' + cheese + '</td><td>$' + cheeseCost + '</td></tr>');
+                if (meats.length > 1) {
+                    for (var i = 1; i < meats.length; i++) {
+                        $('#receiptTable tr:last').after('<tr><td>' + meats[i] + '</td><td>$' + 1 + '</td></tr>');
+                    } 
+                } else if (meats.length == 1) {
+                    $('#receiptTable tr:last').after('<tr><td>' + meats[0] + '</td><td>$' + 0 + '</td></tr>');
+                }
+                if (veggies.length > 1) {
+                    for (var i = 1; i < veggies.length; i++) {
+                        $('#receiptTable tr:last').after('<tr><td>' + veggies[i] + '</td><td>$' + 1 + '</td></tr>');
+                    }
+                } else if (veggies.length == 1) {
+                    $('#receiptTable tr:last').after('<tr><td>' + veggies[0] + '</td><td>$' + 0 + '</td></tr>');
+                }
+                $('#receiptTable tr:last').after('<tr><td><strong>Total Cost:</strong></td><td><strong>$' + totalCost + '</strong></td></tr>');
+
+        };
+
+        function sizeCostCalculator(size) {
+            if (size == 'Personal') {
+                return 6.00;
+            } else if (size == 'Medium') {
+                return 10.00;
+            } else if (size == 'Large') {
+                return 14.00;
+            } else {
+                return 16.00;
+            }
+        }
+
+        function crustCostCalculator(crust) {
+            if (crust == 'Cheese Stuffed Crust') {
+                return 3.00;
+            } else {
+                return 0;
+            }
+        }
+        function cheeseCostCalculator(cheese) {
+            if (cheese == 'Extra Cheese') {
+                return 3.00;
+            } else {
+                return 0;
+            }
+        }
+
+        function meatsCostCalculator(meats) {
+            if (meats.length > 1) {
+                return meats.length - 1;
+            } else {
+                return 0;
+            }
+        }
+
+        function veggiesCostCalculator(veggies) {
+            if (veggies.length > 1) {
+                return veggies.length - 1;
+            } else {
+                return 0;
+            }
+        }
+
+        function orderComplete() {
+            alert("Please enter your payment method on the next screen");
+        }
+    </script>
+</body>
+</html>
